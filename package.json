@@ -1,0 +1,47 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "ts-node-dev --respawn src/app.js",
+    "build": "webpack --config webpack.config.js",
+    "start:prod": "node dist/main.js",
+    "start:multi": "ts-node src/cluster.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v0vchic/simple-CRUD-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/v0vchic/simple-CRUD-API/issues"
+  },
+  "homepage": "https://github.com/v0vchic/simple-CRUD-API#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.17",
+    "@types/supertest": "^6.0.3",
+    "@types/uuid": "^10.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.26.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "supertest": "^7.1.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}
